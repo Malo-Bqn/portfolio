@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     width:100%; 
     height: 100%;
-    background-color: #FFFAFA;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -10,13 +9,15 @@ html, body {
     box-sizing: border-box;
 }
 
-/*.primary-button {
-    background-color: rgba(196, 88, 36, 1);
-    color : rgba(255, 255, 255, 1);
-    border: none;
-    border-radius: 3px;
-    font-size: 18px;
-}*/
+.overlay {
+    position: absolute;
+    z-index: 10000;
+    background-color: rgba(0,20,37, .1);
+    top: 60px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
 #head {
     position: fixed;
@@ -25,7 +26,7 @@ html, body {
     height: 60px;
     z-index: 99;
     right: 0;
-    background: #1C3144;
+    background: rgba(43,45,49,1);
     flex-direction: row;
     align-items: center;
 }
@@ -170,9 +171,10 @@ a {
     }
 }
 
-
-
 .container {
+    background-image: url('../bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     top: 60px;
     right: 0;
@@ -192,4 +194,5 @@ a {
     margin-left: -100px;
     bottom: 50%;
     margin-bottom: -15px;
+    color: white;
 }
