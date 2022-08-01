@@ -172,23 +172,33 @@ a {
     bottom: 0;
 }
 
-#coming-soon {
+.summary {
     position: absolute;
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 30px;
-    width: 200px;
-    font-size: 30px;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    top: 50%;
     left: 50%;
-    margin-left: -100px;
-    bottom: 50%;
-    margin-bottom: -15px;
+    margin-top: -100px;
+    margin-left: -150px;
+}
+
+.summary span {
     color: white;
 }
 
+.summary #name {
+    font-size: 34px;
+}
+
+.summary #job-title {
+    font-size: 24px;
+}
+
 @media (min-width: 800px) {
-    #coming-soon {
+    .summary {
         left: 0;
         margin-left: 150px;
     }
