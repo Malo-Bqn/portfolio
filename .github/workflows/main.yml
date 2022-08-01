@@ -16,5 +16,5 @@ jobs:
           host: ftp.cluster029.hosting.ovh.net
           user: fqpudvo
           password: ${{ secrets.FTP_PASSWORD }}
-          remoteDir: "/home/fqpudvo/www"
-          options: "--delete --ascii --overwrite"
+          remoteDir: "/www"
+          options: "--delete --ascii"
