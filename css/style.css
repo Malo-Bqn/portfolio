@@ -9,16 +9,6 @@ html, body {
     box-sizing: border-box;
 }
 
-.overlay {
-    position: absolute;
-    z-index: 10000;
-    background-color: rgba(0,20,37, .1);
-    top: 60px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-}
-
 #head {
     position: fixed;
     display: flex;
@@ -176,6 +166,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
+    z-index: 100;
     top: 60px;
     right: 0;
     left: 0;
@@ -195,4 +186,11 @@ a {
     bottom: 50%;
     margin-bottom: -15px;
     color: white;
+}
+
+@media (min-width: 800px) {
+    #coming-soon {
+        left: 0;
+        margin-left: 150px;
+    }
 }
