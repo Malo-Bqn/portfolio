@@ -18,3 +18,8 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           remoteDir: "/www"
           options: "--delete --ascii"
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/img/*
