@@ -17,7 +17,7 @@ jobs:
           user: fqpudvo
           password: ${{ secrets.FTP_PASSWORD }}
           remoteDir: "/www"
-          options: "--delete --ascii"
+          options: "--delete"
           exclude: |
             **/.git*
             **/.git*/**
